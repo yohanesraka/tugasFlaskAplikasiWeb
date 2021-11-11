@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css')}}">
+    </head>
+    <body>
+        <table border = 1>
+            {% for key, value in result.items() %}
+                <tr>
+                    <th> { { key } } </th>
+                    <td> { { value } } </td>
+                </tr>
+            {% endfor %}
+        </table>
+        </form>
+    </body>
+</html>
